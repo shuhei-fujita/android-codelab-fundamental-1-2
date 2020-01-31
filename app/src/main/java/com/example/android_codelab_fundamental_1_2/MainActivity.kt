@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        textView.text = "Dice Rolled!"
+
+        val randomInt = (1..6).random()
+        textView.text = randomInt.toString()
     }
 }
